@@ -11,7 +11,7 @@ class PagesController extends Controller
     public function welcome()
     {
         $data = [
-            'name' => 'Arpan Acharya',
+            'name' => 'Aaditya Sapkota',
             'age' => 16
         ];
         return view("welcome")->with($data);
