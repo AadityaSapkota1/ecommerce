@@ -23,7 +23,7 @@
             <td>{{$student->dob}}</td>
             <td>{{$student->address}}</td>
             <td><img src="{{asset($student->image)}}"></td>
-            {{--            <td><img src=""{{asset($student->image)}}"/></td>--}}
+            {{--            <td><img  src=""{{asset($student->image)}}"/ height="100px" width="100px"></td>--}}
         </tr>
     @endforeach
 </table>

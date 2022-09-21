@@ -45,7 +45,7 @@ class PagesController extends Controller
 
         //image
         $filenamewithExt = $request->file('image')->getClientOriginalName();
-        $filename = pathinfo($filenamewithExt, PATHINFOFILENAME);
+        $filename =  time() . '.' ;
         $extension = $request->file('image')->getClientOriginalExtension();
         $filenameToStore = $filename . "" . time() . "." . $extension;
         $img = Image::make($request->file('image'));

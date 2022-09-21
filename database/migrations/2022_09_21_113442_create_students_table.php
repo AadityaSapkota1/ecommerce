@@ -19,6 +19,7 @@ return new class extends Migration
             $table->date('dob')->nullable();
             $table->string('address');
         });
+        
     }
 
     /**
